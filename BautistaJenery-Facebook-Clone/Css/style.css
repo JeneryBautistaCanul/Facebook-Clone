@@ -1,0 +1,103 @@
+.body {
+    font-size: 16px;
+    background-color: #0c0d11;
+    font-family: SFProDisplay-Regular,Helvetica, Arial, sans-serif;
+}
+
+.ancho {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contenedor_inf {
+
+}
+
+.contenedor_info_izquierda {
+ text-align: left;
+}
+
+.contenedor_info_derecha {
+    text-align: right;
+}
+
+/* Contacto */
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%); /* Ahorra media querys. ¿Qué es más pequeño, 60rem o el
+    100% del tamaño de la pantalla? Ejemplo: Sí tengo un dispositivo móvil con 488px de
+    ancho, es más pequeño el 100%, por lo que tomará ese valor y no los 60 rem. Caso contrario, tengo una tablet con 768px, ahí sí es menor 60 rem, por lo que se tomará ese valor */
+    margin: 0 auto;
+    /* Usarlo si el padre no es un display flex (siendo así se usaría el justify-content, el formulario tiene block por defaulf */
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.elementos {
+
+}
+
+/* Boton */
+@media (min-width: 768px) {
+    .btn_azul {
+    width: auto;
+    }
+}
+
+.btn_azul:hover {
+    background-color: #e9e9ea;
+    color: #80accf;
+    cursor: pointer;
+}
+
+.btn_azul {
+    padding: 15px 30px;
+    background-color: #1977f1;
+    color: #fafcff;
+    border: 0;
+    border-radius: 5px;
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn_verde {
+    padding: 15px 15px;
+    background-color: #41b729;
+    color: #fafcff;
+    border: 0;
+    border-radius: 5px;
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.azul {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3c85dd;
+}
+
+.texto_small {
+    text-decoration: none;
+    color:;
+}
+.negritas {
+ font-weight: bold;
+}
